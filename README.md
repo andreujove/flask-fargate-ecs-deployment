@@ -11,8 +11,14 @@ source .venv/bin/activate
 
 2- Start application:
 ```bash
-pip install flask
+pip3 install -r requirements/requirements.txt
 python3 main.py
+```
+
+3- Run tests:
+```bash
+pip3 install -r requirements/requirements-test.txt
+pytest
 ```
 
 ## Docker setup:
@@ -31,5 +37,6 @@ make tests
 # TO DO:
 
 - gunicorn for prod environment
+- Environment variables + settings
 - volumes for development
 - reduce of size of docker images
