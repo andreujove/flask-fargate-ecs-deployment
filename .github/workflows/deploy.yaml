@@ -52,7 +52,7 @@ jobs:
         uses: aws-actions/amazon-ecs-render-task-definition@v1
         with:
           task-definition: task-definition.json
-          container-name: tp-flask-app-app # Must match the 'name' in your containerDefinitions
+          container-name: tp-flask-app-app 
           image: ${{ steps.build-image.outputs.image }}
 
       - name: Deploy Amazon ECS task definition
