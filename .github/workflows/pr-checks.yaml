@@ -13,6 +13,21 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
+      # - name: Code formatting
+      #   run: |
+      #     echo 'Run check format'
+          
+      # - name: Linting/Static analysis
+      #   run: |
+      #     echo 'Run Linting'
+
+      # - name: Security scan for secrets in code
+      #   run: |
+      #     echo 'Run security scan'
+
+      # - name: Unit testing & coverage
+      #   run: |
+      #     echo 'Run testing'
+           
       - name: Run Tests via Makefile
         run: make tests
-
